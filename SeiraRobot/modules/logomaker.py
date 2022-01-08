@@ -73,7 +73,7 @@ async def logo_gen(event):
     if not bg_:
         pics = []
         async for i in ubot2.iter_messages(
-            "@KenLogopack", filter=InputMessagesFilterPhotos
+            "@pytgMusicSupport", filter=InputMessagesFilterPhotos
         ):
             pics.append(i)
         id_ = random.choice(pics)
@@ -113,7 +113,7 @@ async def logo_gen(event):
         await tbot.send_file(
             event.chat_id,
             file=flnme,
-            caption="Logo by [Seira Robot](https://t.me/SeiraXRobot)",
+            caption="Logo by [𝙳ᴇᴠɪʟ✗𝙰ɳɠɛƖ](https://t.me/DevilxAngeLBot)",
             force_document=False,
         )
         os.remove(flnme)
@@ -196,7 +196,7 @@ async def logo_(event):
         await tbot.send_file(
             event.chat_id,
             file=flnme,
-            caption="Logo by [Seira Robot](https://t.me/SeiraXRobot)",
+            caption="Logo by [𝙳ᴇᴠɪʟ✗𝙰ɳɠɛƖ](https://t.me/DevilxAngeLBot)",
             force_document=False,
         )
         os.remove(flnme)
