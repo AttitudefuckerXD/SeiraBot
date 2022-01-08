@@ -81,39 +81,39 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*Hello {} !*
-✪ I'm an anime-theme management bot [✨](https://telegra.ph/file/2a32358fbfb1776fefac0.jpg)
+
+*Hᴇʏ {} !*
+
+✪ I'ᴍ 😈⃝ 𝐃ᴇᴠɪʟ✗𝐀ɳɠɛƖ➻✰༉࿐🧚‍♀️\nAᴅᴠᴀɴᴄᴇᴅ Tᴇʟᴇɢʀᴀᴍ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Wɪᴛʜ Lᴏᴛs Oꜰ Fᴇᴀᴛᴜʀᴇs.
+✪ Bᴏᴛ Fᴏʀ Hᴇʟᴘ Yᴏᴜ Mᴀɴᴀɢᴇ & Pʀᴏᴛᴇᴄᴛ Yᴏᴜʀ Gʀᴏᴜᴘs. 
 ────────────────────────
-× *Uptime:* `{}`
-× `{}` *users, across* `{}` *chats.*
-────────────────────────
-✪ Hit /help to see my available commands.
+[➼](https://telegra.ph/file/a01ef91bd802109bbcbc1.jpg) Usᴇ /help Tᴏ Sᴇᴇ Aʟʟ Cᴏᴍᴍᴀɴᴅs.
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Seira Robot", callback_data="seira_"),
+        InlineKeyboardButton(text="❓Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="Get Help", callback_data="help_back"),
+        InlineKeyboardButton(text="Aʙᴏᴜᴛ Dᴇᴠɪʟ", callback_data="seira_"),
         InlineKeyboardButton(
-            text="Try inline!​​", switch_inline_query_current_chat=""
+            text="Tʀʏ Iɴʟɪɴᴇ!​​", switch_inline_query_current_chat=""
         ),
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Seira To Your Group ➗", url="t.me/SeiraXRobot?startgroup=new"),
+            text="➕ Aᴅᴅ Dᴇᴠɪʟ Tᴏ Uʀ Gʀᴏᴜᴘ ➕", url="t.me/DevilxAngeLBot?startgroup=new"),
     ],
 ]
 
 
 HELP_STRINGS = """
-Click on the button bellow to get description about specifics command."""
+ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ ᴀʙᴏᴜᴛ sᴘᴇᴄɪꜰɪᴄs ᴄᴏᴍᴍᴀɴᴅ[💫](https://telegra.ph/file/7a04e0d0eb064eccf275d.jpg)."""
 
 EMI_IMG = "https://telegra.ph/file/2a32358fbfb1776fefac0.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @xyzsethhh \
+ You can support the project by contacting @Attitude_king_vj \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -229,7 +229,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"<b>Hi I'm Seira Robot!</b>\n<b>Started working since:</b> <code>{uptime}</code>",
+            f"<b>Hi I'm 𝙳ᴇᴠɪʟ✗𝙰ɳɠɛƖ!</b>\n<b>Started working since:</b> <code>{uptime}</code>",
             parse_mode=ParseMode.HTML
        )
 
@@ -360,32 +360,32 @@ def seira_about_callback(update, context):
     query = update.callback_query
     if query.data == "seira_":
         query.message.edit_text(
-            text="๏ I'm *Seira*, a powerful group management bot built to help you manage your group easily."
+            text="๏ I'm *𝙳ᴇᴠɪʟ✗𝙰ɳɠɛƖ*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
             "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
             "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             "\n• I check for admins' permissions before executing any command and more stuffs"
-            "\n\n_Seira's licensed under the GNU General Public License v3.0_"
-            "\n\n Click on button bellow to get basic help for Seira Robot.",
+            "\n\n_𝙳ᴇᴠɪʟ✗𝙰ɳɠɛƖ's licensed under the GNU General Public License v3.0_"
+            "\n\n Click on button bellow to get basic help for 𝙳ᴇᴠɪʟ✗𝙰ɳɠɛƖ.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Admins", callback_data="seira_admin"),
-                    InlineKeyboardButton(text="Notes", callback_data="seira_notes"),
+                    InlineKeyboardButton(text="Aᴅᴍɪɴs", callback_data="seira_admin"),
+                    InlineKeyboardButton(text="Nᴏᴛᴇs", callback_data="seira_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="Support", callback_data="seira_support"),
-                    InlineKeyboardButton(text="Credits", callback_data="seira_credits"),
+                    InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", callback_data="seira_support"),
+                    InlineKeyboardButton(text="Cʀᴇᴅɪᴛs", callback_data="seira_credits"),
                  ],
                  [
-                    InlineKeyboardButton(text="Seth Tamvan", url="https://t.me/xyzsethhh"),
+                    InlineKeyboardButton(text="🔉MᴜsɪᴄPʟᴀʏᴇʀ", url="source_"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="seira_back"),
+                    InlineKeyboardButton(text="🔙 Bᴀᴄᴋ", callback_data="seira_back"),
                  ]
                 ]
             ),
@@ -435,17 +435,17 @@ def seira_about_callback(update, context):
         )
     elif query.data == "seira_support":
         query.message.edit_text(
-            text="*๏ Seira support chats*"
+            text="*๏ 𝙳ᴇᴠɪʟ✗𝙰ɳɠɛƖ support chats*"
             "\nJoin My Support Group/Channel for see or report a problem on Seira.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/SeiraSupport"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/sethproject"),
+                    InlineKeyboardButton(text="Support", url="t.me/tgCalls_Musicxchat"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/tgcalls_Music_update"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="seira_"),
+                    InlineKeyboardButton(text="🔙 Bᴀᴄᴋ", callback_data="seira_"),
                  
                  ]
                 ]
@@ -455,21 +455,21 @@ def seira_about_callback(update, context):
 
     elif query.data == "seira_credits":
         query.message.edit_text(
-            text=f"๏ Credis for Seira\n"
-            "\nHere Developers Making And Give Inspiration For Made The Seira Robot",
+            text=f"๏ Credis for 𝙳ᴇᴠɪʟ✗𝙰ɳɠɛƖ\n"
+            "\nHere Developers Making And Give Inspiration For Made The 𝙳ᴇᴠɪʟ✗𝙰ɳɠɛƖ",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Seth", url="https://github.com/Dorimuhai"),
-                    InlineKeyboardButton(text="Sena-Ex", url="https://github.com/kennedy-ex"),
+                    InlineKeyboardButton(text="𝗔𝖙𝖙𝖎𝖙𝖚𝖉𝖊 𝗸𝖎𝖓𝖌", url="https://t.me/Attitude_king_vj"),
+                    InlineKeyboardButton(text="𝐀𝐫𝐲𝐳𝐚", url="t.me/IdzXartez"),
                  ],
                  [
-                    InlineKeyboardButton(text="Vain", url="https://github.com/shiinobu"),
-                    InlineKeyboardButton(text="All Dev's Bots", url="https://t.me/SeiraSupport"),
+                    InlineKeyboardButton(text="𝐓𝐡𝐢𝐬 𝐩𝐞𝐫𝐬𝐨𝐧", url="t.me/BrayDenXD"),
+                    InlineKeyboardButton(text="𝐀𝐝𝐦𝐢𝐧'𝐬 𝐡𝐞𝐫𝐞", url="https://t.me/tgcalls_MusicXchat"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="seira_"),
+                    InlineKeyboardButton(text="🔙 𝐁𝐚𝐜𝐤", callback_data="seira_"),
                  ]
                 ]
             ),
@@ -479,14 +479,14 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text="๏›› This advance command for Musicplayer."
+            text="๏›› This advance command for Musicplayer Power by 𝙳ᴇᴠɪʟ✗𝙰ɳɠɛƖ༉࿐."
             "\n\n๏ Command for admins only."
-            "\n • `/bhaks` - for check connecion music player."
+            "\n • `/joinassistant` - invait assistant to ur group."
             "\n • `/pause` - To pause the playback."
             "\n • `/resume` - To resuming the playback You've paused."
             "\n • `/skip` - To skipping the player."
             "\n • `/end` - For end the playback."
-            "\n • `/music <on/off>` - Toggle for turn ON or turn OFF the musicplayer."
+            "\n • `/ping` - Cheak bot Alive."
             "\n\n๏ Command for all members."
             "\n • `/play` <query /reply audio> - Playing music via YouTube."
             "\n • `/playlist` - To playing a playlist of groups or your personal playlist",
@@ -495,7 +495,7 @@ def Source_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="seira_")
+                    InlineKeyboardButton(text="🔙 Bᴀᴄᴋ", callback_data="seira_")
                  ]
                 ]
             ),
@@ -565,7 +565,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="🔙 Bᴀᴄᴋ", callback_data="help_back")]]
             ),
         )
 
@@ -637,7 +637,7 @@ def settings_button(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Go Back",
+                                text="🔙 Bᴀᴄᴋ",
                                 callback_data="stngs_back({})".format(chat_id),
                             )
                         ]
@@ -786,7 +786,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                f"""**Seira Robot Actived 🔥**
+                f"""**𝙳ᴇᴠɪʟ✗𝙰ɳɠɛƖ༉࿐ Actived 🔥**
 
 **Python:** `{memek()}`
 **Telegram Library:** `v{peler}`""",
