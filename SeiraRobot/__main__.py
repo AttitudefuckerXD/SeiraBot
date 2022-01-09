@@ -95,7 +95,7 @@ buttons = [
         InlineKeyboardButton(text="❓Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="Aʙᴏᴜᴛ Dᴇᴠɪʟ", callback_data="seira_"),
+        InlineKeyboardButton(text="Aʙᴏᴜᴛ Dᴇᴠɪʟ", callback_data="devil_"),
         InlineKeyboardButton(
             text="Tʀʏ Iɴʟɪɴᴇ!​​", switch_inline_query_current_chat=""
         ),
@@ -358,7 +358,7 @@ def help_button(update, context):
 
 def seira_about_callback(update, context):
     query = update.callback_query
-    if query.data == "seira_":
+    if query.data == "devil_":
         query.message.edit_text(
             text="๏ I'm *𝙳ᴇᴠɪʟ✗𝙰ɳɠɛƖ*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
