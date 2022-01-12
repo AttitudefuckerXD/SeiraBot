@@ -18,6 +18,6 @@ async def awake(event):
   LUNA += f"💎 **Telethon Version : {tlhver}** \n\n"
   LUNA += f"💎 **Pyrogram Version : {pyrover}** \n\n"
   LUNA += "**Thanks for add me here 💜**"
-  BUTTON = [[Button.url("ʜᴇʟᴘ", "https://t.me/DevilxAngeLBot?start=help"), Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/seirasupport")]]
+  BUTTON = [[Button.url("ʜᴇʟᴘ", "https://t.me/DevilxAngeLBot?start=help"), Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/tgcalls_Musicxchat")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=LUNA,  buttons=BUTTON)
 
