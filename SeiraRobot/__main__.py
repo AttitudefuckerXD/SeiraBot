@@ -382,7 +382,7 @@ def seira_about_callback(update, context):
                     InlineKeyboardButton(text="Cʀᴇᴅɪᴛs", callback_data="seira_credits"),
                  ],
                  [
-                    InlineKeyboardButton(text="🔉MᴜsɪᴄPʟᴀʏᴇʀ", url="source_"),
+                    InlineKeyboardButton(text="🔉MᴜsɪᴄPʟᴀʏᴇʀ", callback_data="source_"),
                  ],
                  [
                     InlineKeyboardButton(text="🔙 Bᴀᴄᴋ", callback_data="seira_back"),
