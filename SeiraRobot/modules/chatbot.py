@@ -139,7 +139,7 @@ async def hmm(client, message):
         response = response.replace("Have the control right.", "@Attitude_king_vj is my owner.")
         response = response.replace(
                 "Hi, my friend, what can I do for you today?",
-                "Hi, My name is Seira Nice to meet you")
+                "Hi, My name is DevilAngel Nice to meet you")
 
         pro = response
         try:
@@ -204,7 +204,7 @@ async def hmm(client, message):
             "Hi, my friend! Do you want me to tell you a joke?")
         test = test.replace("@xyzsethhh is my owner", "Have the control right.")
         test = test.replace(
-            "Hi, My name is Seira Nice to meet you.",
+            "Hi, My name is DevilAngel Nice to meet you.",
             "Hi, my friend, what can I do for you today?")
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
@@ -299,7 +299,7 @@ async def inuka(client, message):
         "Hi, my friend! Do you want me to tell you a joke?")
     test = test.replace("@Attitude_king_vj is my owner", "Have the control right.")
     test = test.replace(
-        "Hi, My name is Seira Nice to meet you.",
+        "Hi, My name is DevilAngel Nice to meet you.",
         "Hi, my friend, what can I do for you today?")
 
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
@@ -320,7 +320,7 @@ async def inuka(client, message):
     response = response.replace("Have the control right.", "@Attitude_king_vj is my owner.")
     response = response.replace(
             "Hi, my friend, what can I do for you today?",
-            "Hi, My name is Seira Nice to meet you")
+            "Hi, My name is DevilAngel Nice to meet you")
 
     pro = response
     if not "en" in lan and not lan == "":
