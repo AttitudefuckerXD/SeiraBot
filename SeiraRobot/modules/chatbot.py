@@ -210,9 +210,9 @@ async def hmm(client, message):
             test, message.from_user.id if message.from_user else 0
         )
         response = response.replace("Aco", "Devil")
-        response = response.replace("aco", "Seira")
-        response = response.replace("Luna", "Seira")
-        response = response.replace("luna", "Seira")
+        response = response.replace("aco", "Devil")
+        response = response.replace("Luna", "Devil")
+        response = response.replace("luna", "Devil")
         response = response.replace("I'm a Christian", "My god is  @Attitude_king_vj")
         response = response.replace("9", "16")
         response = response.replace("I'm married to my job.", "I'm married with  @Attitude_king_vj")
@@ -304,9 +304,9 @@ async def inuka(client, message):
 
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
     response = response.replace("Aco", "Devil")
-    response = response.replace("aco", "Seira")
-    response = response.replace("Luna", "Seira")
-    response = response.replace("luna", "Seira")
+    response = response.replace("aco", "Devil")
+    response = response.replace("Luna", "Devil")
+    response = response.replace("luna", "Devil")
     response = response.replace("I'm a Christian", "My god is  @Attitude_king_vj")
     response = response.replace("9", "16")
     response = response.replace("I'm married to my job.", "I'm married with @Attitude_king_vj")
@@ -381,8 +381,8 @@ async def inuka(client, message):
 
     # test = emoji.demojize(test.strip())
 
-    test = test.replace("Seira", "Aco")
-    test = test.replace("Seira", "Aco")
+    test = test.replace("Devil", "Aco")
+    test = test.replace("Devil", "Aco")
     test = test.replace("My god is @Attitude_king_vj", "I'm a Christian")
     test = test.replace("16", "9") 
     test = test.replace("@Attitude_king_vj is my husband.", "I'm single.")
