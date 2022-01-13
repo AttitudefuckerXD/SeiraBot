@@ -101,7 +101,7 @@ Time Zones:- {tom}
 Top Level Domain:- {lanester}
 wikipedia:- {wiki}</b>
 
-Gathered By Seira Robot ✨.</b>
+Gathered By DevilxAngeLBot ✨.</b>
 """
 
     await borg.send_message(
