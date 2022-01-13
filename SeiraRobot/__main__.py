@@ -436,7 +436,7 @@ def seira_about_callback(update, context):
     elif query.data == "seira_support":
         query.message.edit_text(
             text="*๏ 𝙳ᴇᴠɪʟ✗𝙰ɳɠɛƖ support chats*"
-            "\nJoin My Support Group/Channel for see or report a problem on Seira.",
+            "\nJoin My Support Group/Channel for see or report a problem on DevilAngel.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
